@@ -77,15 +77,7 @@
         }
 
         a:visited {
-            color: DARKSEAGREEN;
-        }
-
-        a:hover {
-            color: deepskyblue;
-        }
-
-        a:active {
-            color: mediumpurple;
+            color: darkseagreen;
         }
 
         a.menulink {
@@ -105,17 +97,19 @@
             font-weight: bold;
         }
 
-        a.bloglink:hover {
-            text-decoration: underline;
-        }
-
         a.categorielink {
             font-size: 14px;
             color: black;
             text-decoration: none;
         }
-        a.categorielink:hover {
+
+        a:hover, a.bloglink:hover, a.categorielink:hover, a.menulink:hover {
             text-decoration: underline;
+        }
+
+        a:active, a.bloglink:active, a.categorielink:active, a.menulink:active {
+            color: slateblue;
+            text-decoration: undermine;
         }
 
     </style>
