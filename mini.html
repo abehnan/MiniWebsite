@@ -9,7 +9,7 @@
         }
 
         .loginbar {
-            background-color: rgb(1, 59, 59);
+            background-color: rgb(0, 65, 65);
             font-size: 12px;
             color: white;
             padding: 4px 7% 4px 7%;
@@ -27,19 +27,41 @@
         }
 
         .blog {
-            padding: 8px 7% 8px 7%;
+            padding-top: 0%;
+            margin-top: 0%;
             background-color: white;
-            margin-right: 40%;
-            position: absolute;
+            margin-left: 7%;
+            margin-right: 45%;
         }
 
         .categories {
             left: 60%;
-            right: 7%;
+            right: 0%;
+            top: 151px;
+            margin-right: 7%;
             padding: 40px;
             background-color: rgb(170, 182, 159);
             position: absolute;
             color: black;
+        }
+
+        .floating-left {
+            overflow: auto;
+            position: static;
+            bottom: 0px;
+            right: 66%;
+            left: 0px;
+            width: 33%;
+            height: 75px;
+            margin: 0px;
+            background-color: rgb(0, 65, 65);
+            color: white;
+        }
+
+        .bottombox {
+            background-color: rgb(0, 65, 65);
+            color: white;
+            height: 75px;
         }
 
         p {
@@ -86,7 +108,7 @@
             text-transform: uppercase;
             font-size: 18px;
         }
-        
+
         a.menulink:hover {
             text-decoration: underline;
         }
@@ -103,15 +125,20 @@
             text-decoration: none;
         }
 
-        a:hover, a.bloglink:hover, a.categorielink:hover, a.menulink:hover {
+        a:hover,
+        a.bloglink:hover,
+        a.categorielink:hover,
+        a.menulink:hover {
             text-decoration: underline;
         }
 
-        a:active, a.bloglink:active, a.categorielink:active, a.menulink:active {
+        a:active,
+        a.bloglink:active,
+        a.categorielink:active,
+        a.menulink:active {
             color: slateblue;
             text-decoration: undermine;
         }
-
     </style>
 </head>
 
@@ -147,8 +174,72 @@
             contact</a>
         &nbsp;&nbsp;&nbsp;&nbsp;
     </div>
-    
+
     <div class="blog">
+        <div class=categories>
+            <h3 style="padding-bottom: 0px; margin-bottom: 0px;">
+                Categories
+            </h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="http://www.seriouseats.com/recipes/2014/04/the-best-general-tsos-chicken-food-lab-chinese-recipe.html">
+                General
+            </a>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="http://www.redbookmag.com/life/features/g2890/pictures-of-ghosts/?">
+                Ghost Sitings
+            </a>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="http://www.roswellufomuseum.com/incident.html">
+                UFO Crashes
+            </a>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="http://content.time.com/time/specials/packages/completelist/0,29569,2008962,00.html">
+                Government Coverups
+            </a>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="https://en.wikipedia.org/wiki/List_of_conspiracy_theories">
+                International Conspiracies
+            </a>
+            <h3 style="padding-bottom: 0px; margin-bottom: 0px;">
+                Recent Posts
+            </h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="http://www.dailymail.co.uk/news/article-2102910/Thats-spooky-How-ghost-sightings-mansion-stopped-return-long-lost-painting.html">
+                Ghost Sighting in Mansion
+            </a>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="http://www.popularmechanics.com/space/satellites/news/a21814/iss-ufo-footage-explanation/">
+                UFO picked up by satellites
+            </a>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="http://blogs.sciencemag.org/pipeline/archives/2016/05/10/mutants-among-us">
+                Mutants among us?
+            </a>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="https://www.livescience.com/24598-bigfoot.html">
+                Bigfoot: Fact or Fiction?
+            </a>
+            <h3 style="padding-bottom: 0px; margin-bottom: 0px;">
+                Archives
+            </h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="http://www.onthisday.com/events/date/2008/june">
+                June 2008
+            </a>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="http://www.onthisday.com/events/date/2008/may">
+                May 2008
+            </a>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="http://www.onthisday.com/events/date/2008/april">
+                April 2008
+            </a>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class=categorielink href="http://www.onthisday.com/events/date/2008/march">
+                March 2008
+            </a>
+
+        </div>
         <!-- the actual blog goes here -->
         <h1>Don't Cancel Chuck!</h1>
         <h6>
@@ -290,81 +381,15 @@
             <li>Hi I'm 13 and I just started watching Rick and Morty and I can tell you for a fact it's my favorite show!!.</li>
             <li>I'am smarter then you're average fidget spinner teen at middle school to even though I have one.</li>
         </ol>
-    </div>
-    <div class=categories>
-        <h3 style="padding-bottom: 0px; margin-bottom: 0px;">
-            Categories
-        </h3>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="http://www.seriouseats.com/recipes/2014/04/the-best-general-tsos-chicken-food-lab-chinese-recipe.html">
-            General
-        </a>
         <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="http://www.redbookmag.com/life/features/g2890/pictures-of-ghosts/?">
-            Ghost Sitings
-        </a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="http://www.roswellufomuseum.com/incident.html">
-            UFO Crashes
-        </a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="http://content.time.com/time/specials/packages/completelist/0,29569,2008962,00.html">
-            Government Coverups
-        </a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="https://en.wikipedia.org/wiki/List_of_conspiracy_theories">
-            International Conspiracies
-        </a>
-        <h3 style="padding-bottom: 0px; margin-bottom: 0px;">
-            Recent Posts
-        </h3>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="http://www.dailymail.co.uk/news/article-2102910/Thats-spooky-How-ghost-sightings-mansion-stopped-return-long-lost-painting.html">
-            Ghost Sighting in Mansion
-        </a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="http://www.popularmechanics.com/space/satellites/news/a21814/iss-ufo-footage-explanation/">
-            UFO picked up by satellites
-        </a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="http://blogs.sciencemag.org/pipeline/archives/2016/05/10/mutants-among-us">
-            Mutants among us?
-        </a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="https://www.livescience.com/24598-bigfoot.html">
-            Bigfoot: Fact or Fiction?
-        </a>
-        <h3 style="padding-bottom: 0px; margin-bottom: 0px;">
-            Archives
-        </h3>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="http://www.onthisday.com/events/date/2008/june">
-            June 2008
-        </a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="http://www.onthisday.com/events/date/2008/may">
-            May 2008
-        </a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="http://www.onthisday.com/events/date/2008/april">
-            April 2008
-        </a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a class=categorielink href="http://www.onthisday.com/events/date/2008/march">
-            March 2008
-        </a>
 
     </div>
+
+
+    <div class="bottombox">footer goes here</div>
+    
+    
+
 </body>
 
 </html>
