@@ -45,23 +45,29 @@
             color: black;
         }
 
-        .floating-left {
-            overflow: auto;
-            position: static;
-            bottom: 0px;
-            right: 66%;
-            left: 0px;
-            width: 33%;
-            height: 75px;
-            margin: 0px;
-            background-color: rgb(0, 65, 65);
-            color: white;
-        }
-
         .bottombox {
             background-color: rgb(0, 65, 65);
-            color: white;
+            color: darkseagreen;
             height: 75px;
+            padding: 20px 7% 80px 0px;
+        }
+
+        .bottomleft {
+            position: absolute;
+            left: 7%;
+            right: 60%;
+        }
+
+        .bottommiddle {
+            position: absolute;
+            left: 41%;
+            right: 25%;
+        }
+        .bottomright {
+            position: absolute;
+            left: 75%;
+            right: 7%;
+            float: right;
         }
 
         p {
@@ -125,6 +131,12 @@
             text-decoration: none;
         }
 
+        a.bottomlink {
+            color: white;
+            text-decoration: none;
+        }
+
+        a.bottomlink:hover,
         a:hover,
         a.bloglink:hover,
         a.categorielink:hover,
@@ -386,9 +398,35 @@
     </div>
 
 
-    <div class="bottombox">footer goes here</div>
-    
-    
+    <div class="bottombox">
+        <div class="bottomleft">
+            <h3 style="color: darkseagreen">Links</h3>
+            <a class=bottomlink href: "https://www.tutorialspoint.com/">PSDtuts - Photoshop tutorials</a>
+            <br>
+            <a class=bottomlink href: "https://www.tutorialspoint.com/">NetTuts - Web development and design tutorials</a>
+            <br>
+            <a class=bottomlink href: "https://www.tutorialspoint.com/">VectorTuts - Illustrator and vector tutorials</a>
+            <br>
+            <a class=bottomlink href: "https://www.tutorialspoint.com/">Flashtuts - Adove Flash tutorials</a>
+
+        </div>
+        <div class="bottommiddle">
+            <h3 style="color: darkseagreen">Links</h3>
+            <a class=bottomlink href: "https://www.tutorialspoint.com/">PSDtuts - Photoshop tutorials</a>
+            <br>
+            <a class=bottomlink href: "https://www.tutorialspoint.com/">NetTuts - Web development and design tutorials</a>
+            <br>
+            <a class=bottomlink href: "https://www.tutorialspoint.com/">VectorTuts - Illustrator and vector tutorials</a>
+            <br>
+            <a class=bottomlink href: "https://www.tutorialspoint.com/">Flashtuts - Adove Flash tutorials</a>
+        
+        </div>
+        <div class="bottomright" >
+           <p style="float:right">Copyright &copy; 2008.<br>All rights reserved.</p>
+        </div>
+    </div>
+
+
 
 </body>
 
