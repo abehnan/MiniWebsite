@@ -1,5 +1,5 @@
 function clickMe() {
-    var inputColor = prompt("Enter a color name for the " + "background of this page", "");
+    var inputColor = prompt("Please enter a new background color:\nThe accepted options are 'red' or 'blue'.", "");
     if (inputColor == 'red') {
         document.getElementById("loginbar").style.backgroundColor = 'rgb(77, 4, 4)';
         document.getElementById("titlebar").style.backgroundColor = 'rgb(170, 23, 23)';
