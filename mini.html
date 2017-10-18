@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <script src = "a4-5.js"></script>
-    
+    <script src="a4-5.js"></script>
+
     <style>
         body {
             font-family: sans-serif;
@@ -65,6 +65,7 @@
             left: 41%;
             right: 25%;
         }
+
         .bottomright {
             position: absolute;
             left: 75%;
@@ -175,7 +176,7 @@
         <span style="font-size: 20px">Description of My Blog</span>
     </div>
 
-    <div id="menubar"class="menubar">
+    <div id="menubar" class="menubar">
         <a href="https://www.homedepot.ca/en/home.html" class="menulink">
             home</a>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -255,7 +256,7 @@
             </a>
             <br>
             <br>
-            <input type="button" value="color" onclick="clickMe()" style="width: 100%;"></input>
+            <input type="button" value="Colors" onclick="clickMe()" style="width: 100%;"></input>
 
         </div>
         <!-- the actual blog goes here -->
@@ -402,6 +403,7 @@
         <br>
 
     </div>
+    <!-- Put the footer of the page here -->
     <div id="bottombox" class="bottombox">
         <div class="bottomleft">
             <h3 style="color: darkseagreen">Links</h3>
@@ -421,13 +423,44 @@
             <a class=bottomlink href="http://rss-tutorial.com/rss-how-to-subscribe-to-feeds.htm">What is RSS?</a>
             <br>
             <a class=bottomlink href="https://www.cdc.gov/other/emailupdates/">Email Updates</a>
-        
+
         </div>
-        <div class="bottomright" >
-           <p style="float:right">Copyright &copy; 2008.<br>All rights reserved.</p>
+        <div class="bottomright">
+            <p style="float:right">Copyright &copy; 2008.
+                <br>All rights reserved.</p>
         </div>
     </div>
 
-   
+    <!-- The canvas goes here -->
+    <div class="bottombox" style="height: 300px; padding-left: 7%;">
+        <canvas id='myCanvas' width='400' height='300' style="border-style: solid; border-color: white;">
+            Your browser does nto support the canvas element.
+        </canvas>
+
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = "white";
+            ctx.moveTo(10, 10);
+            ctx.lineTo(100, 100);
+            ctx.lineTo(10, 100);
+            ctx.moveTo(10, 10);
+            ctx.lineTo(10, 295);
+            ctx.lineTo(100, 200);
+            ctx.moveTo(10, 200);
+            ctx.lineTo(250, 200);
+            ctx.lineTo(250, 100);
+            ctx.lineTo(10, 100);
+            ctx.moveTo(250, 100);
+            ctx.lineTo(350, 150);
+            ctx.lineTo(250, 200);
+            ctx.stroke();
+        </script>
+    </div>
+
+
+
 </body>
+
 </html>
