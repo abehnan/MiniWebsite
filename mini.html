@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <script src = "a4-5.js"></script>
+    
     <style>
         body {
             font-family: sans-serif;
@@ -157,7 +159,7 @@
 
 <body>
 
-    <div class="loginbar">
+    <div id="loginbar" class="loginbar">
         Welcome, Guest
         <a href="https://www.pathofexile.com/login">Login</a>
         <a href="https://www.pathofexile.com/account/create">Sign Up</a>
@@ -168,12 +170,12 @@
         </span>
     </div>
 
-    <div class="titlebar">
+    <div id="titlebar" class="titlebar">
         <span style="font-size: 36px">My Blog &nbsp;</span>
         <span style="font-size: 20px">Description of My Blog</span>
     </div>
 
-    <div class="menubar">
+    <div id="menubar"class="menubar">
         <a href="https://www.homedepot.ca/en/home.html" class="menulink">
             home</a>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -189,7 +191,7 @@
     </div>
 
     <div class="blog">
-        <div class=categories>
+        <div id="categories" class=categories>
             <h3 style="padding-bottom: 0px; margin-bottom: 0px;">
                 Categories
             </h3>
@@ -251,6 +253,9 @@
             <a class=categorielink href="http://www.onthisday.com/events/date/2008/march">
                 March 2008
             </a>
+            <br>
+            <br>
+            <input type="button" value="color" onclick="clickMe()" style="width: 100%;"></input>
 
         </div>
         <!-- the actual blog goes here -->
@@ -397,9 +402,7 @@
         <br>
 
     </div>
-
-
-    <div class="bottombox">
+    <div id="bottombox" class="bottombox">
         <div class="bottomleft">
             <h3 style="color: darkseagreen">Links</h3>
             <a class=bottomlink href="https://www.tutorialspoint.com/">PSDtuts - Photoshop tutorials</a>
@@ -425,8 +428,6 @@
         </div>
     </div>
 
-
-
+   
 </body>
-
 </html>
